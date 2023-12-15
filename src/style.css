@@ -65,8 +65,8 @@ p {
 }
 
 .card {
-    background-color: #232D3F;
-    width: 30%;
+    background-color: #2F2F2F;
+    width: 32%;
     border-radius: 24px;
     transition: 0.3s;
 }
@@ -75,6 +75,7 @@ p {
     width: 100%;
     max-height: 260px;
     border-radius: 24px;
+    object-fit: cover;
 }
 
 .card:hover {
