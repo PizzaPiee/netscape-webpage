@@ -32,6 +32,14 @@ body {
     text-align: center;
 }
 
+.text-justify {
+    text-align: justify;
+}
+
+.text-wrapped {
+    width: 60%;
+}
+
 p {
   font-size: 1em;
 }
@@ -71,6 +79,7 @@ p {
 }
 
 .card {
+    align-items: center;
     background-color: var(--jet);
     width: 32%;
     border-radius: 24px;
@@ -86,6 +95,18 @@ p {
 
 .card:hover {
     background-color: var(--green);
+}
+
+.card-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-group {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
 }
 
 .section-hero {
@@ -110,6 +131,7 @@ p {
     padding-left: 32px;
     display: flex;
     justify-content: space-around;
+    margin-bottom: 32px;
 }
 
 .section-cards .card .container {
@@ -117,6 +139,21 @@ p {
     flex-direction: column;
     gap: 12px;
     margin-bottom: 16px;
+}
+
+.section-scelta-strategica .content {
+    display: flex;
+    align-items: center;
+}
+
+.section-scelta-strategica .content .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.section-scelta-strategica .content {
+    padding: 48px;
 }
               
                 
