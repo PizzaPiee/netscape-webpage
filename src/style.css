@@ -4,7 +4,13 @@
     margin: 0;
 }
 
+:root {
+    --white: ##F5F5F5;
+    --blu: #2F41E2;
+    --jet: #2F2F2F;
+    --green: #005B41;
 
+}
 
 html {font-size: 16px;}
 
@@ -19,7 +25,7 @@ body {
 }
 
 .text-color-blu {
-    color: #2F41E2;
+    color: var(--blu);
 }
 
 .text-center {
@@ -65,7 +71,7 @@ p {
 }
 
 .card {
-    background-color: #2F2F2F;
+    background-color: var(--jet);
     width: 32%;
     border-radius: 24px;
     transition: 0.3s;
@@ -79,7 +85,7 @@ p {
 }
 
 .card:hover {
-    background-color: #005B41;
+    background-color: var(--green);
 }
 
 .section-hero {
@@ -96,7 +102,7 @@ p {
 }
 
 .section-hero span:hover {
-    color: #005B41;
+    color: var(--green);
 }
 
 .section-cards {
