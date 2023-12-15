@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "serve": "^14.2.1"
+  },
+  "name": "netscape-web",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "serve": "serve src/"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
