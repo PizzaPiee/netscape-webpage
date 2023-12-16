@@ -260,8 +260,8 @@ p {
 }
 
 .section-image {
-    height: 70vh;
-    background-image: url("./assets/bill_gates_vs_netscape.jpg");
+    height: 90vh;
+    background-image: url("./assets/bill_gates_vs_netscape-nobg.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
