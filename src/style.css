@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     margin: 0;
@@ -15,7 +16,7 @@
 html {font-size: 16px;}
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Noto', sans-serif;
   font-weight: false;
   background-color: #171717;
 }
@@ -172,3 +173,64 @@ p {
 .section-quote h1 {
     width: 60%;
 }
+
+.section-tiles {
+    height: 85vh;
+    padding: 80px;
+    margin-top: 12px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+        "first second third"
+        "fourth second third"
+        "fifth fifth third";
+    gap: 12px 12px;
+}
+
+.section-tiles .tile-item:nth-child(1) {
+    grid-area: first;
+    background-color: #f25117;
+}
+
+.section-tiles .tile-item:nth-child(2) {
+    grid-area: second;
+    background-color: #f2a104;
+}
+
+.section-tiles .tile-item:nth-child(3) {
+    grid-area: third;
+    /* background-color: #72a2c0; */
+    background-color: #252A34;
+}
+
+.section-tiles .tile-item:nth-child(4) {
+    grid-area: fourth;
+    background-color: #1d65a6;
+}
+
+.section-tiles .tile-item:nth-child(5) {
+    grid-area: fifth;
+    background-color: #00743f;
+}
+
+.tile-item {
+    background-color: var(--green);
+    border-radius: 12px;
+}
+
+.tile-item .content {
+    height: 100%;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    gap: 24px;
+}
+
+.tile-item .content .text {
+    /* font-size: 1.1em; */
+    font-weight: 600;
+}
+
