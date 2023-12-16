@@ -58,9 +58,9 @@ p {
 
 .text-size-h3 { font-family: 'Oswald', sans-serif; font-size: 1.95em; }
 
-.text-size-h4 { font-family: 'Oswald', sans-serif; font-size: 1.56em; }
+.text-size-h4 { font-size: 1.56em; }
 
-.text-size-h5 { font-family: 'Oswald', sans-serif; font-size: 1.25em; }
+.text-size-h5 { font-size: 1.25em; }
 
 .text-caption { font-size: 0.8em; }
 
@@ -260,8 +260,36 @@ p {
 }
 
 .section-image {
-    height: 90vh;
+    padding: 24px;
+    height: 80vh;
     background-image: url("./assets/bill_gates_vs_netscape-nobg.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: #008170;
+}
+
+.section-conclusione {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: space-evenly;
+    margin-top: 12px;
+    height: 100vh;
+    padding: 80px;
+}
+
+.section-conclusione .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-conclusione .content p {
+    width: 50%;
+}
+
+.chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
