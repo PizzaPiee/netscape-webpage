@@ -8,7 +8,7 @@
 }
 
 :root {
-    --white: ##F5F5F5;
+    --white: #F5F5F5;
     --blu: #2F41E2;
     --jet: #2F2F2F;
     --green: #005B41;
@@ -24,7 +24,7 @@ body {
 }
 
 .text-color-white {
-    color: white;
+    color: var(--white);
 }
 
 .text-color-blu {
