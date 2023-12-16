@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 * {
     margin: 0;
@@ -16,7 +18,7 @@
 html {font-size: 16px;}
 
 body {
-  font-family: 'Noto', sans-serif;
+  font-family: 'Lexend', sans-serif;
   font-weight: false;
   background-color: #171717;
 }
@@ -46,19 +48,19 @@ p {
 }
 
 .text-size-h1 {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: 700;
   margin-top: 0;
   font-size: 3.05em;
 }
 
-.text-size-h2 { font-size: 2.44em; }
+.text-size-h2 { font-family: 'Oswald', sans-serif; font-size: 2.44em; }
 
-.text-size-h3 { font-size: 1.95em; }
+.text-size-h3 { font-family: 'Oswald', sans-serif; font-size: 1.95em; }
 
-.text-size-h4 { font-size: 1.56em; }
+.text-size-h4 { font-family: 'Oswald', sans-serif; font-size: 1.56em; }
 
-.text-size-h5 { font-size: 1.25em; }
+.text-size-h5 { font-family: 'Oswald', sans-serif; font-size: 1.25em; }
 
 .text-caption { font-size: 0.8em; }
 
@@ -68,7 +70,7 @@ p {
 
 .heading {
     line-height: 1.1em;
-    letter-spacing: -.04em;
+    letter-spacing: -.02em;
 }
 
 .text {
@@ -234,3 +236,32 @@ p {
     font-weight: 600;
 }
 
+.section-info {
+    padding: 80px;
+    display: flex;
+    gap: 24px;
+}
+
+.section-info .infobox {
+    display: flex;
+}
+
+.section-info .infobox .box {
+    width: 32px;
+    background-color: var(--blu);
+}
+
+.section-info .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background-color: var(--jet);
+}
+
+.section-image {
+    height: 70vh;
+    background-image: url("./assets/bill_gates_vs_netscape.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
