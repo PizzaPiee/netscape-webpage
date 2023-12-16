@@ -155,5 +155,20 @@ p {
 .section-scelta-strategica .content {
     padding: 48px;
 }
-              
-                
+       
+.section-quote {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    background-color: var(--blu);
+
+    background-image: url("./assets/marc_andreessen.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 25%;
+}
+
+.section-quote h1 {
+    width: 60%;
+}
