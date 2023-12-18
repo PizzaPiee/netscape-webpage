@@ -356,10 +356,65 @@ object {
 
     .section-image {
         /* background-size: cover; */
-        height: 32vh;
+        height: 40vh;
     }
 
     .section-conclusione .content p {
         text-align: center;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .section-cards {
+        flex-wrap: nowrap;
+    }
+
+    .section-quote {
+        height: 25vh;
+        background-size: 30%;
+    }
+
+    .section-tiles {
+         display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+            "first second third"
+            "fourth second third"
+            "fifth fifth third";
+        gap: 12px 12px;
+    }
+
+    .section-tiles .tile-item:nth-child(1) {
+        grid-area: first;
+        background-color: #f25117;
+    }
+    
+    .section-tiles .tile-item:nth-child(2) {
+        grid-area: second;
+        background-color: #f2a104;
+    }
+    
+    .section-tiles .tile-item:nth-child(3) {
+        grid-area: third;
+        background-color: #252A34;
+    }
+    
+    .section-tiles .tile-item:nth-child(4) {
+        grid-area: fourth;
+        background-color: #1d65a6;
+    }
+    
+    .section-tiles .tile-item:nth-child(5) {
+        grid-area: fifth;
+        background-color: #00743f;
+    }
+
+    .section-info {
+        flex-direction: row;
+    }
+
+    object {
+        width: auto;
     }
 }
