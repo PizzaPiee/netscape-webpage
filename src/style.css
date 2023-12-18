@@ -73,7 +73,9 @@ a {
     text-decoration: underline;
     /* color: var(--green); */
     color: #65B741;
+    cursor: pointer;
 }
+
 
 .heading {
     line-height: 1.1em;
