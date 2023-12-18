@@ -303,6 +303,7 @@ p {
     margin-top: 12px;
     /* height: 100vh; */
     padding: 0px 24px;
+    margin-bottom: 24px;
 }
 
 .section-conclusione .content {
@@ -331,5 +332,34 @@ object {
 }
 
 @media screen and (min-width: 768px) {
-    
+    .section-cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .section-cards .card {
+        flex: 40%;
+    }
+
+    .section-scelta-strategica .content .wrapper div {
+        flex-direction: row;
+        margin-bottom: 12px;
+    }
+
+    .section-scelta-strategica img {
+        display: block;
+    }
+
+    .section-quote {
+        background-size: 30%;
+    }
+
+    .section-image {
+        /* background-size: cover; */
+        height: 38vh;
+    }
+
+    .section-conclusione .content p {
+        text-align: center;
+    }
 }
