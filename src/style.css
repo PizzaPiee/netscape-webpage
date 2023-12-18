@@ -84,7 +84,7 @@ p {
 .card {
     align-items: center;
     background-color: var(--jet);
-    width: 32%;
+    /* width: 32%; */
     border-radius: 24px;
     transition: 0.3s;
 }
@@ -119,6 +119,8 @@ p {
     justify-content: center;
     height: 500px;
     gap: 32px;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 .section-hero span {
@@ -133,8 +135,10 @@ p {
     padding-right: 32px;
     padding-left: 32px;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     margin-bottom: 32px;
+    gap: 12px;
 }
 
 .section-cards .card .container {
@@ -144,9 +148,14 @@ p {
     margin-bottom: 16px;
 }
 
+.section-scelta-strategica {
+    margin-bottom: 12px;
+}
+
 .section-scelta-strategica .content {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    /* align-items: center; */
 }
 
 .section-scelta-strategica .content .wrapper {
@@ -155,65 +164,81 @@ p {
     gap: 24px;
 }
 
+.section-scelta-strategica .content .wrapper div {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
 .section-scelta-strategica .content {
-    padding: 48px;
+    padding: 0px 24px;
+}
+
+.section-scelta-strategica img {
+    display: none;
 }
        
 .section-quote {
+    padding-left: 24px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 30vh;
+    justify-content: left;
+    height: 20vh;
     background-color: var(--blu);
 
     background-image: url("./assets/marc_andreessen.png");
     background-repeat: no-repeat;
     background-position: right bottom;
-    background-size: 25%;
+    background-size: 50%;
+
+    margin-bottom: 24px;
 }
 
 .section-quote h1 {
+    text-align: left;
     width: 60%;
 }
 
 .section-tiles {
-    height: 85vh;
-    padding: 80px;
-    margin-top: 12px;
+    /* height: 95vh; */
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0px 24px;
 
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: 
         "first second third"
         "fourth second third"
         "fifth fifth third";
-    gap: 12px 12px;
+    gap: 12px 12px; */
 }
 
 .section-tiles .tile-item:nth-child(1) {
-    grid-area: first;
+    /* grid-area: first; */
     background-color: #f25117;
 }
 
 .section-tiles .tile-item:nth-child(2) {
-    grid-area: second;
+    /* grid-area: second; */
     background-color: #f2a104;
 }
 
 .section-tiles .tile-item:nth-child(3) {
-    grid-area: third;
+    /* grid-area: third; */
     /* background-color: #72a2c0; */
     background-color: #252A34;
 }
 
 .section-tiles .tile-item:nth-child(4) {
-    grid-area: fourth;
+    /* grid-area: fourth; */
     background-color: #1d65a6;
 }
 
 .section-tiles .tile-item:nth-child(5) {
-    grid-area: fifth;
+    /* grid-area: fifth; */
     background-color: #00743f;
 }
 
@@ -237,8 +262,9 @@ p {
 }
 
 .section-info {
-    padding: 80px;
+    padding: 24px;
     display: flex;
+    flex-direction: column;
     gap: 24px;
 }
 
@@ -261,11 +287,12 @@ p {
 
 .section-image {
     padding: 24px;
-    height: 80vh;
+    height: 30vh;
     background-image: url("./assets/bill_gates_vs_netscape-nobg.png");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-color: #008170;
+    background-position: bottom;
 }
 
 .section-conclusione {
@@ -274,22 +301,35 @@ p {
     gap: 24px;
     justify-content: space-evenly;
     margin-top: 12px;
-    height: 100vh;
-    padding: 80px;
+    /* height: 100vh; */
+    padding: 0px 24px;
 }
 
 .section-conclusione .content {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    /* justify-content: space-between;
+    align-items: center; */
 }
 
 .section-conclusione .content p {
-    width: 50%;
+    /* width: 50%; */
+    margin-bottom: 12px;
 }
 
 .chart {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0px 24px;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+object {
+    width: 90vw;
+}
+
+@media screen and (min-width: 768px) {
+    
 }
