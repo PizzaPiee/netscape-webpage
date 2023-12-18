@@ -418,3 +418,31 @@ object {
         width: auto;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .section-scelta-strategica .content {
+        flex-direction: row;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .section-scelta-strategica img {
+        width: 45%;
+    }
+
+    .section-quote {
+        height: 25vh;
+        background-size: 20%;
+    }
+
+    .section-image {
+        background-size: cover;
+        height: 70vh;
+    }
+
+    .section-conclusione .content {
+        /* flex-direction: row; */
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+}
